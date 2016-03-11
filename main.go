@@ -9,7 +9,7 @@ import (
 
 func main() {
   router := gin.Default()
-  router.LoadHTMLGlob("view/*") // Viewディレクトリの指定
+  router.LoadHTMLGlob("views/*") // Viewディレクトリの指定
 
   router.GET("/", func(c *gin.Context) {
     ctrl := task.NewTask()

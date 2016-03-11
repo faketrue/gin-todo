@@ -22,13 +22,6 @@ type Task struct {
 
 type Tasks []Task
 
-func NewTask(id int, text string) Task {
-  return Task{
-    ID: id,
-    Text: text,
-  }
-}
-
 type TaskRepository struct {
 }
 
